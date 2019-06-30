@@ -1,0 +1,3573 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CATOGAME</title>
+<style>
+	*{margin:0;padding: 0;}
+	/**修改主题内容文字**/
+	a{text-decoration:none;color:#F4BC2C;font-size:14px;font-family:Arial;}
+	a:hover{color:#F4BC2C;}
+	ul{list-style:none;}
+
+	/**修改背景**//**linear-gradient(to left,#222222,#222222)**/
+	.main{;margin:0 auto;background:#222222;}
+
+	/**跟随背景**/
+	.contents{position:fixed;overflow:auto;overflow-x:hidden;width:160px;height:100%;}
+	.contents::-webkit-scrollbar{ width:1px;height:1px;}
+    .contents::-webkit-scrollbar-button{background-color:#222222;}
+    .contents::-webkit-scrollbar-track{background:#222222;}
+    .contents::-webkit-scrollbar-track-piece{background:;}
+    .contents::-webkit-scrollbar-thumb{ background:#222222;}
+    .contents::-webkit-scrollbar-corner{background:#222222; }
+    .contents::-webkit-resizer{background:#222222; }
+    
+
+    /**修改猫瞳游戏内容**/
+	.contents dt a{display:block;font-family:Times New Roman;font-size:40px;color:#222222;text-align:center;line-height:158px;width:160px;height:100%;border-bottom:1px solid #222222;background:#F4BC2C;} 
+
+	/**修改左侧边栏**/
+	.contents dd{float:left;width:160px;}
+	.contents dd a{color:#222222;display:block;font-size:16px;width:158px;height:100%;text-align:center;line-height:100%;border:1px solid #F4BC2C;border-bottom-color:#222222;padding:20px 0;background:#F4BC2C;}
+
+	/**点击后改变颜色**/
+	.contents dd a:hover{color:#F4BC2C;background:#222222;border-color:#222222; }
+
+
+	/**修改左侧边栏**/
+	.bottom>a{display:block;width:60px;color:#545454;font-size:10px;position:fixed;text-align:right;margin-top:180px;}
+	
+	/**修改右侧边栏间距和位置**/
+	.O1>a{top:0%;left:94%;}
+	.O2>a{top:4%;left:94%;}
+	.O3>a{top:8%;left:94%;}
+	.O4>a{top:12%;left:94%;}
+	.O5>a{top:16%;left:94%;}
+	.O6>a{top:20%;left:94%;}
+	.O7>a{top:24%;left:94%;}
+	.O8>a{top:28%;left:94%;}
+	.bottom a:hover{color:#F4BC2C;}
+
+	.list {margin-left:340px;}/**修改主体内容到侧边栏的距离**/
+	.list div{overflow:hidden;}
+	.list dl{overflow:hidden;padding-top:80px;}/**最顶部的间距.list **/
+	.list dt{;color:#545454;font-size:16px;}/**修改大标题的颜色和字体大小**/
+	.list dd{overflow:hidden;float:left;padding-top:30px;width:270px;}
+	.list dd span{font-family:Microsoft YaHei;font-size:10px;color:#545454;line-height:300%;}
+	#AA1{padding-top:180px;}
+</style>
+</head>
+
+<body>	
+	<div class="main">		
+		<div class="contents">
+			<dl>
+				<dt id="CAT"><a target="_blank" href="http://weibo.com/u/3521976232?is_all=1">CATO</a></dt>
+				<dd id="O"><a href="#O01">每日网站</a></dd>
+
+				<dd id="A"><a href="#A01">高频网站</a></dd>
+			
+				<dd id="B"><a href="#B01">收集网站</a></dd>
+				<dd><a href="#B02">搜索下载</a></dd>
+				<dd><a href="#B03">国内网站</a></dd>
+				<dd><a href="#B04">国外网站</a></dd>
+				<dd><a href="#B05">工具网站</a></dd>
+				<dd><a href="#B06">书籍网站</a></dd>
+				<dd><a href="#B07">论文网站</a></dd>
+				<dd><a href="#B08">课程网站</a></dd>
+				<dd><a href="#B09">趣味网站</a></dd>
+
+				<dd id="C"><a href="#C01">设计导航</a></dd>
+				<dd><a href="#C02">设计网站</a></dd>
+				<dd><a href="#C03">设计参考</a></dd>
+				<dd><a href="#C04">设计课程</a></dd>
+				<dd><a href="#C05">设计大奖</a></dd>
+				<dd><a href="#C06">logo网站</a></dd>
+				<dd><a href="#C07">UED网站</a></dd>
+				<dd><a href="#C08">设计工具</a></dd>
+				<dd><a href="#C09">素材网站</a></dd>
+				<dd><a href="#C10">色彩网站</a></dd>
+				<dd><a href="#C11">字体网站</a></dd>
+				<dd><a href="#C12">图标网站</a></dd>
+				<dd><a href="#C13">图库网站</a></dd>
+				<dd><a href="#C14">影视资源</a></dd>
+				<dd><a href="#C15">iH5网站</a></dd>
+				<dd><a href="#C16">PPT网站</a></dd>
+
+				<dd id="D"><a href="#D01">工作网站</a></dd>
+				<dd><a href="#D02">行业咨询</a></dd>
+				<dd><a href="#D03">职场工具</a></dd>
+				<dd><a href="#D04">学习课程</a></dd>
+
+				<dd id="E"><a href="#E01">流行媒体</a></dd>
+				<dd><a href="#E02">科技阅读</a></dd>
+				<dd><a href="#E03">新闻阅读</a></dd>
+				<dd><a href="#E04">小说阅读</a></dd>
+				
+				<dd id="F"><a href="#F01">个人管理</a></dd>
+				<dd><a href="#F02">个人网站</a></dd>
+				<dd><a href="#F03">公号研究</a></dd>
+				<dd><a href="#F04">活动网站</a></dd>
+				<dd><a href="#F05">创意研究</a></dd>
+				<dd><a href="#F06">语言研究</a></dd>
+				<dd><a href="#F07">音乐研究</a></dd>
+				<dd><a href="#F08">艺术研究</a></dd>
+				<dd><a href="#F09">插画网站</a></dd>
+				<dd><a href="#F10">建筑研究</a></dd>
+				<dd><a href="#F11">摄影研究</a></dd>
+				<dd><a href="#F12">动漫研究</a></dd>
+				<dd><a href="#F13">后期研究</a></dd>
+				<dd><a href="#F14">数据可视</a></dd>
+				<dd><a href="#F15">编程研究</a></dd>
+				<dd><a href="#F16">数学研究</a></dd>
+				<dd><a href="#F17">游戏理论</a></dd>
+				<dd><a href="#F18">等待分类</a></dd>
+				<dd id="OVER"><a href="#F19"></a></dd>
+			</dl>
+		</div>
+		<div class="srceen"></div>
+		<div class="bottom O1"><a href="#CAT">2019.6.9</a>
+		</div>
+		<div class="bottom O2"><a href="#B">Tool</a>
+		</div>
+		<div class="bottom O3"><a href="#C">Design</a>
+		</div>
+		<div class="bottom O4"><a href="#D"">Work</a>
+		</div>
+		<div class="bottom O5"><a href="#E">Read</a>
+		</div>
+		<div class="bottom O6"><a href="#F">Study</a>
+		</div>
+		<div class="bottom O7"><a href="#F07">Music</a>
+		</div>
+		<div class="bottom O8"><a href="#OVER">Over</a>
+		</div>
+		
+		<div class="list"> 
+
+			<!--Daily Guide-->
+			<div id="O01"><!--每日网站-->
+				<dl id="O01">
+					<dt>每日网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://36kr.com/">36氪</a><br/>
+						<span>科技</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.booooooom.com/">Booooooom</a><br/>
+						<span>Booooooom</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="A01"><!--高频网站-->
+				<dl id="AA1">
+					<dt>高频网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://dribbble.com/">Dribbble</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.behance.net/">Behance</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pinterest.com/">Pinterest</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.instagram.com/	">Instagram</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.tumblr.com/">Tumblr</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://codepen.io/">Codepen</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.uisdc.com/">优设</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zcool.com.cn/">站酷</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://huabanpro.com/">花瓣</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.oschina.net/">开源中国</a><br/>
+						<span>开源技术社区</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://github.com/">GitHub</a><br/>
+						<span>Built for developers</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.csdn.net/">CSDN</a><br/>
+						<span>论坛</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.cnblogs.com/">博客园</a><br/>
+						<span>创作你的创作</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mp.weixin.qq.com/">微信公号</a><br/>
+						<span>公号平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://music.163.com/">网易云音乐</a><br/>
+						<span>APP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mubu.com/">幕布</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://whimsical.com/">Whimsical</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ones.ai/">Ones</a><br/>
+						<span>管理</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://wx.zsxq.com/dweb/">知识星球</a><br/>
+						<span>知识分享</span><!--阿里云邮箱登陆-->
+					</dd>
+				</dl>
+			</div>
+
+			<!--Tool Guide-->
+
+			<div id="B01"><!--收集网站-->
+				<dl>
+					<dt>收集网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.qkankan.com/">去看看</a><br/>
+						<span>收集</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.kguowai.com/">看国外</a><br/>
+						<span>收集</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://guanwangdaquan.com/">全官网</a><br/>
+						<span>收集</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.egouz.com/">EGOUZ</a><br/>
+						<span>收集</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hao.199it.com/">大数据导航</a><br/>
+						<span>数据</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://ilxdh.com/">龙轩导航</a><br/>
+						<span>个人</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://minapp.com/miniapp/">知晓程序</a><br/>
+						<span>小程序</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.jiandaoyun.com/dash/5b67ee977c2061035127142e">网址大全</a><br/>
+						<span>收集</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.16lao.com/">16LAO</a><br/>
+						<span>收集</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://daohangwan.com/">导航湾</a><br/>
+						<span>导航湾</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://shedingkong.lofter.com/?page=15&t=1392448308862">设定控</a><br/>
+						<span>资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://lackar.com/aa/">AA</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.yingmi123.com/">影迷导航网</a><br/>
+						<span>影视</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B02"><!--搜索下载-->
+				<dl>
+					<dt>搜索下载 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://weixin.sogou.com/">微信搜索</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mijisou.com/">秘迹搜索</a><br/>
+						<span>秘迹搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.360doc.com/">360DOC</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://dir.scmor.com/">SCMOR</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://ishare.iask.sina.com.cn/">爱问共享资料</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.duososo.com/">多搜</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://vdisk.weibo.com/">微盘</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.swkong.com/">孙悟空</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://scholar.chongbuluo.com/">虫部落</a><br/>
+						<span>搜索</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.0daydown.com/">0DAYDOWN</a><br/>
+						<span>软件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iplaysoft.com/">异次元软件</a><br/>
+						<span>软件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.portablesoft.org/">便携软件</a><br/>
+						<span>软件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dayanzai.me/">大眼仔旭</a><br/>
+						<span>软件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.waerfa.com/">MAC玩儿法</a><br/>
+						<span>软件</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B03"><!--国内网站-->
+				<dl>
+					<dt>国内网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.bilibili.com/">哔哩哔哩</a><br/>
+						<span>视频</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.zhihu.com/">知乎</a><br/>
+						<span>知乎</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.douban.com/">豆瓣</a><br/>
+						<span>我们的精神角落</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://qdan.me/?from=logo">清单</a><br/>
+						<span>发现一个更轻的世界</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.jianshu.com/">简书</a><br/>
+						<span>创作你的创作</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mp.weixin.qq.com/">微信公号</a><br/>
+						<span>公号平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://wx.zsxq.com/dweb/">知识星球</a><br/>
+						<span>知识分享</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.lofter.com/">Lofter</a><br/>
+						<span>分享</span>
+					</dd>
+					<dd>
+						<a target="_blank" href="https://weibo.com/">微博</a><br/>
+						<span>分享</span>
+					</dd>
+				</dl>
+			</div>
+			<div id="B04"><!--国外网站-->
+				<dl>
+					<dt>国外网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.google.com/">Google</a><br/>
+						<span>搜索</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.wolframalpha.com/">Wolframalpha</a><br/>
+						<span>搜索</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.wikipedia.org/">Wikipedia</a><br/>
+						<span>Wiki</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.facebook.com/">Facebook</a><br/>
+						<span>社交</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.reddit.com/">Reddit</a><br/>
+						<span>社交</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.flickr.com/">flickr</a><br/>
+						<span>社交</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://coub.com/">Hot Coub</a><br/>
+						<span>Coub</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.youtube.com/">Youtube</a><br/>
+						<span>视频</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://github.com/">GitHub</a><br/>
+						<span>项目</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.upwork.com/">UpWork</a><br/>
+						<span>兼职</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.codecademy.com/learn">Codecademy</a><br/>
+						<span>编程</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.worklifebalance.com/">Work Life Balance</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.dotdash.com/">Dotdash</a><br/>
+						<span>生活指南</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.gapingvoid.com/">Gapingvoid</a><br/>
+						<span>思维</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://lifehacker.com/">Life Hacker</a><br/>
+						<span>Life Hacker</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.tumblr.com/">Tumblr</a><br/>
+						<span>图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.instagram.com/	">Instagram</a><br/>
+						<span>图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pinterest.com/">Pinterest</a><br/>
+						<span>灵感</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://gallerix.asia/">Gallerix</a><br/>
+						<span>名画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://commons.wikimedia.org/wiki/Category:Google_Art_Project_works_by_artist">Category</a><br/>
+						<span>名画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://imgur.com/">Imgur</a><br/>
+						<span>Imgur</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://themeforest.net/">Themeforest</a><br/>
+						<span>模板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.tedtochina.com/">TED To China</a><br/>
+						<span>演讲</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ted.com/">TED</a><br/>
+						<span>演讲</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.justlanded.com/">Just Landed</a><br/>
+						<span>Just Landed</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.nature.com/">Nature</a><br/>
+						<span>Nature</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.nasa.gov/">NASA</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dlese.org/lib/">DLESE</a><br/>
+						<span>DLESE</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.expasy.org/">Expasy</a><br/>
+						<span>Expasy</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://platform.ifttt.com/">IFTTT</a><br/>
+						<span>If This Then That</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.boredpanda.com/">Boredpanda</a><br/>
+						<span>Boredpanda</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://community.businessmodelyou.com/">Business Model You</a><br/>
+						<span>Business Model</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.cnbc.com/">CNBC</a><br/>
+						<span>Wait</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.vox.com/recode">Recode</a><br/>
+						<span>Wait</span><!--###-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B05"><!--工具网站-->
+				<dl>
+					<dt>工具网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://cli.im/">草料二维码</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mail.aliyun.com/alimail/">阿里邮箱</a><br/>
+						<span>简洁好用的邮箱</span><!--CATOGAME-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.fhdq.net/">符号大全</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://unicode-table.com/cn/#control-character">字符百科</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://translate.google.cn/">谷歌翻译</a><br/>
+						<span>翻译</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://daishu.baidu.com/">袋鼠输入</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://naotu.baidu.com/">百度脑图</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.flvcd.com/">硕鼠官网</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://assrt.net/">射手字幕</a><br/>
+						<span>字幕</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.an2.net/">汉字字帖</a><br/>
+						<span>字幕</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.reg007.com/">一搜便知</a><br/>
+						<span>注册查询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://index.baidu.com/">百度指数</a><br/>
+						<span>注册查询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ageeye.cn/">发现中国</a><br/>
+						<span>古地图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://radio.garden/live/">电台公园</a><br/>
+						<span>翻墙</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://processon.com/">Processon</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://shimo.im/">石墨</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.taguage.com/">TAGUAGE</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mubu.com/">幕布</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://whimsical.com/">Whimsical</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ones.ai/">Ones</a><br/>
+						<span>管理</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://bit.ly/2WS2RRV">BAACLOUD</a><br/>
+						<span>翻墙</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.apowersoft.cn/">Apowersoft</a><br/>
+						<span>好用软件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.alexa.cn/">ALEXA</a><br/>
+						<span>网站排名</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://dict.cnki.net/">CNKI</a><br/>
+						<span>翻译助手</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://cn.office-converter.com/">Converter</a><br/>
+						<span>office-converter</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.mvcat.com/">MvCat</a><br/>
+						<span>mvcat</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B06"><!--书籍网站-->
+				<dl>
+					<dt>书籍网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.ucdrs.superlib.net/">全国图书馆参考咨询联盟</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cnbksy.cn/home">全国报刊索引</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://guji.artx.cn/">中国古籍全录</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.nlc.gov.cn/">中国国家图书馆</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.gujiguan.com/">古籍馆</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.getfreeebooks.com/">GetFreeeBooks</a><br/>
+						<span>编辑, 数学</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.wdl.org/zh/">世界数字图书馆</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://freebooks4doctors.com/">医学书籍</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.jiumodiary.com/">鸠摩搜索</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.wuxiaworld.com/">武侠世界</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://kgbook.com/">苦瓜书盘</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://shuge.org/">书格</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.europeana.eu/portal/en">Europeana</a><br/>
+						<span>欧洲各图书馆</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://bookfere.com/books">书伴</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.alldatasheet.com/">All Data Sheet</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.bartleby.com/">Bartleby</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://bookset.me/">BookSet</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.bookyards.com/en/welcome#.Wl3lOmhL_IV">BookYards</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://bookboon.com/en">BookBoon</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dlese.org/lib/">Digital</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ocw.mit.edu/index.htm">Elfwood</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.icpsr.umich.edu/icpsrweb/ICPSR/">Find Data</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.downloadfreepdf.com/">FreePdf</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.free-ebooks.net/#">Free-Ebooks</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.qcenglish.com/">QC</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ebooks.com/">Ebooks</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://cn.epubee.com/books/">Epubee</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.gutenberg.org/wiki/Main_Page">Gutenberg</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/">ICPSR</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iamtxt.com/">Iamtxt</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://chroniclingamerica.loc.gov/">LOC</a><br/>
+						<span>报纸</span><!--美国国会图书馆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.intechopen.com/">IntechOpen</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://manybooks.net/">ManyBooks</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://mathworld.wolfram.com/">Mathworld</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://gen.lib.rus.ec/">Library Genesis</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://openlibrary.org/">OpenLibrary</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://openpdf.com/">OpenPdf</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.oalib.com/">Oalib</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.repository.cam.ac.uk/">Repository</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ucdrs.superlib.net/">Superlib</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					
+					<dd>
+						<a target="_blank" href="http://en.unesco.org/">Unesco</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zvdd.de/en/start/">ZVDD</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.360doc.com/">360DOC</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href=" http://freebooks4doctors.com/">4DOoctors</a><br/>
+						<span>搜书</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.maidixun.com/">Maidixun</a><br/>
+						<span>杂志</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B07"><!--论文网站-->
+				<dl>
+					<dt>论文网站-暂不整理 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://pqdtopen.proquest.com/">PQDT Open</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://oatd.org/">OATD</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.oalib.com/">OALib</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.worldcat.org/">OAIster</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://gooa.las.ac.cn/">Go OA</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dart-europe.eu/">DART-Europe</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.souoa.com/">SouOA</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.doaj.org/">DOAJ</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.las.ac.cn/">LAS.AC</a><br/>
+						<span>文献情报中心</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://repec.org/">RePEc</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ethos.bl.uk/">EThOS</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.socolar.com/">Socolar</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.questia.com/">Questia</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://arxiv.org/">arXiv</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.sciencedirect.com/">ScienceDirect</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ness.org/">NESS</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.scirp.org/">SCIRP</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.nstl.gov.cn/">NSTL</a><br/>
+						<span>国家科技图书文献中心</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ucdrs.superlib.net/">UCDRS</a><br/>
+						<span>全国图书官参考咨询联盟</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.2447.net/">学术猫</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.cn-ki.net/">iData</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B08"><!--课程网站-->
+				<dl>
+					<dt>课程网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.icourse163.org/">中国大学MOOC</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://open.163.com/">网易公开课</a><br/>
+						<span>Wait</span><!--lxm1234321@126.com-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ke.qq.com/">腾讯课堂</a><br/>
+						<span>Wait</span><!--QQ-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.mooc.cn/">MOOC中国</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.khanacademy.org/">可汗学院</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.coursera.org/">Coursera</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.udemy.com/">Udemy</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.edx.org/">Edx</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ocw.mit.edu//">MIT</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://cnx.org/">CNX</a><br/>
+						<span>Wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.minxue.net/">学习网</a><br/>
+						<span>敏而好学 轻松下载</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="B09"><!--趣味网站-->
+				<dl>
+					<dt>趣味网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://qq.yh31.com/">表情党</a><br/>
+						<span>Gif</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://dig.chouti.com/">抽屉新榜</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://inkarnate.com/">InKarnate</a><br/>
+						<span>地图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://spaceengine.org/">Spaceengine</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.heardatwork.co/">heardatwork</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>	
+
+			<!--Design Guide-->
+			
+			<div id="C01"><!--设计导航-->
+				<dl>
+					<dt>设计导航 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.alloyteam.com/nav/">WEB前端导航</a><br/>
+						<span>WEB前端</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://web.geekji.cn/talkList.html">钛导航</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://docschina.org/">印记中文</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.niudana.com/">牛大拿导航</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.daqianduan.com/nav#">大前端导航</a><br/>
+						<span>前端</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://so.uigreat.com/">UIGreat</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.foolo.cn/index.php">设计师导航</a><br/>
+						<span>FOOLO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://dh.zhisheji.com/">致设计导航</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ideacool.cn/">创意酷导航</a><br/>
+						<span>创意</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://daohangwan.com/">导航湾导航</a><br/>
+						<span>导航湾</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hao.xueui.cn/">UI设计导航</a><br/>
+						<span>UI</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hao.uisdc.com/">优设导航</a><br/>
+						<span>优设</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hao.psefan.com/">饭团导航</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hao.shejidaren.com/#modile.qq.com">设计导航</a><br/>
+						<span>设计导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ubuuk.com/">设计导航</a><br/>
+						<span>设计导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hao.shejipi.com/">设计导航</a><br/>
+						<span>设计癖</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://doyoudo.com/resources">资源导航</a><br/>
+						<span>资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://guanwangdaquan.com/">官网大全</a><br/>
+						<span>官网大全</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.seeseed.com/">SeeSeed</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.hiimii.com/hi/#lg">HiiMii</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://brandren.link/">Brandren</a><br/>
+						<span>导航</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C02"><!--设计网站-->
+				<dl>
+					<dt>设计网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://dribbble.com/">Dribbble</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.behance.net/">Behance</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pinterest.com/">Pinterest</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.instagram.com/	">Instagram</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.tumblr.com/">Tumblr</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://infographicworld.com/">IGW</a><br/>
+						<span>Infographicworld</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://codepen.io/">Codepen</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.uisdc.com/">优设</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zcool.com.cn/">站酷</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://huabanpro.com/">花瓣</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.bigbigwork.com/">大作</a><br/>
+						<span>必备</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cndesign.com/">CND</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.deviantart.com/">DeviantArt</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://shijue.me/">视觉中国</a><br/>
+						<span>二级</span><!--手机登录-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ycg.qq.com/">原创馆</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://thefwa.com/">FWA</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ideatom.com/">IdeaTom</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://www.columnfivemedia.com/">Column Five</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://yang16.com/">YANG16</a><br/>
+						<span>二级</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://www.designspiration.net/">designspiration</a><br/>
+						<span>灵感</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.artstation.com/">Artstation</a><br/>
+						<span>插画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.fubiz.net/">Fubiz</a><br/>
+						<span>临时</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.gtn9.com/">古田路9号</a><br/>
+						<span>设计</span><!--手机登录-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.warting.com/">设计帝国</a><br/>
+						<span>文章</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.underconsideration.com/">UCUC</a><br/>
+						<span></span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.qijishow.com/">奇迹秀</a><br/>
+						<span></span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C03"><!--设计参考-->
+				<dl>
+					<dt>设计参考 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.68design.net/cool/">今日酷站</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iguoguo.net/">爱果果</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://bm.straightline.jp/">WEB集</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.webdesignclip.com/">WDC</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.awwwards.com/">AWWWARDS</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.collectui.com/">Collectui</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://web.2008php.com">2008PHP</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://gdweb.co.kr/">GDWEB</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://reeoo.com/">REEOO</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://muuuuu.org/">MUUUU</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://4db.cc/">4DB</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://designshack.net/">Design Shack</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://letterformarchive.org/">LFM</a><br/>
+						<span>文章</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://anyway.fm/#">Anyway.FM</a><br/>
+						<span>FM</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C04"><!--设计课程-->
+				<dl>
+					<dt>设计课程 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://doyoudo.com/">Doyoudo</a><br/>
+						<span>教程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://uiiiuiii.com/">Ui2</a><br/>
+						<span>教程</span><!--xxxx-->
+					</dd>
+					<dd>						
+						<a target="_blank" href="http://www.xueui.cn/">学UI</a><br/>
+						<span>UI学习</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ui.cn/">UI中国</a><br/>
+						<span>UI学习</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.tuyiyi.com/">图翼网</a><br/>
+						<span>UI</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://huke88.com/">虎课网</a><br/>
+						<span>Wait</span><!--QQ-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zhisheji.com/">致设计</a><br/>
+						<span>教程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.qinxue.com/">勤学网</a><br/>
+						<span>课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.fevte.com/">飞特网</a><br/>
+						<span>PS AI教程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://uispace.net/">UISpace</a><br/>
+						<span>UI</span><!--xxxx-->
+					</dd>
+					
+				</dl>
+			</div>	
+			<div id="C05"><!--设计大奖-->
+				<dl>
+					<dt>设计大奖 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.dandad.org/en/d-ad-new-blood-awards/">D&AD</a><br/>
+						<span>D&AD New Blood Awards </span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://awards.designweek.co.uk/home">Design Week</a><br/>
+						<span>Design Week Awards</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.designanddesign.com/index.php">DAD</a><br/>
+						<span>Design And Design</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://idesignawards.com/">IDA</a><br/>
+						<span>Internation design Awards</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://drivenxdesign.com/lon15/default.asp">LDA</a><br/>
+						<span>London Design Awards</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.howdesign.com/design-competition-galleries/poster-design-awards/">PDA</a><br/>
+						<span>Poster Design Awards</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C06"><!--logo网站-->
+				<dl>
+					<dt>logo网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.logodashi.com/">Logo大师</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.logoquan.com/">Logo圈</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cnlogo8.com/">CNLogo8</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://logopond.com/">Logo Pond</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.logoed.co.uk/">LogoED</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.logospire.com/">Logo Spire</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://www.underconsideration.com/brandnew/">Brand New</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.logoheroes.net/">Logo Heroes</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.logonews.cn/">LogoNews</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://cn.idnworld.com/">IW</a><br/>
+						<span>LOGO</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C07"><!--UED网站-->
+				<dl>
+					<dt>UED网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://ued.sina.com/">新浪UED</a><br/>
+						<span>UED</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ics.alibaba.com/">Alibaba</a><br/>
+						<span>ICS</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://mux.baidu.com/">百度MUX</a><br/>
+						<span>UED</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://tgideas.qq.com/">TGIDEAS</a><br/>
+						<span>TGIDEAS</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://isux.tencent.com/">腾讯ISUX</a><br/>
+						<span>ISUX</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C08"><!--设计工具-->
+				<dl>
+					<dt>设计工具 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.shejidaren.com/examples/tools/golden-ratio/index.html">Golden Ratio</a><br/>
+						<span>黄金比例</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns</a><br/>
+						<span>平铺文理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.heropatterns.com/">Heropatterns</a><br/>
+						<span>纹理工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://webgradients.com/">Webgradients</a><br/>
+						<span>渐变背景</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://123apps.com/cn/">FWA</a><br/>
+						<span>应用</span><!--xxxx-->
+					</dd>
+					<dd >
+						<a target="_blank" href="http://www.polaxiong.com/editor#">Polarr</a><br/>
+						<span>修图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.polaxiong.com/">泼辣修图</a><br/>
+						<span>修图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.fuhaoku.com/">符号库</a><br/>
+						<span>符号</span><!--xxxx-->
+					</dd>
+					<dd >
+						<a target="_blank" href="http://www.cutterman.cn/">Cutterman</a><br/>
+						<span>插件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.fastprint.co.uk/adobe-shortcut-mapper/">快捷键</a><br/>
+						<span>快键</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ilovepdf.com/">I Love Pdf</a><br/>
+						<span>转换</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.google.com/earth/studio/">EarthStudio</a><br/>
+						<span>地图</span><!--xxxx-->
+					</dd>							
+					<dd>
+						<a target="_blank" href="https://photomosh.com/">Photomosh</a><br/>
+						<span>优化</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://cantunsee.space/">Cantunsee</a><br/>
+						<span>修正</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://yoksel.github.io/svg-filters/#/">SVG-Filters</a><br/>
+						<span>图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://tinyjpg.com/">TinyJPG</a><br/>
+						<span>图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://zhitu.isux.us/">智图</a><br/>
+						<span>图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://vectr.com/new">Vectr</a><br/>
+						<span>作图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.autodraw.com/">Autodraw</a><br/>
+						<span>作图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://wordart.com/">WordArt</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://type.method.ac/#">type.method</a><br/>
+						<span>字体</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.beautiful.ai/">Beautiful Ai</a><br/>
+						<span>模板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.chuangkit.com/">创客贴</a><br/>
+						<span>模板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.gaoding.com/">搞定设计</a><br/>
+						<span>快模板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.canva.com/">CANVA</a><br/>
+						<span>模板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.wix.com/">WIX</a><br/>
+						<span>模板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://818ps.com/">怪兽图</a><br/>
+						<span>模板</span><!--xxxx-->
+					</dd>
+
+					<dd>
+						<a target="_blank" href="http://upuptoyou.com/">UPUP</a><br/>
+						<span>玩具</span><!--xxxx-->
+					</dd>
+					<dd >
+						<a target="_blank" href="http://bezier.method.ac/">Bezier</a><br/>
+						<span>玩具</span><!--xxxx-->
+					</dd>
+					<dd >
+						<a target="_blank" href="http://weavesilk.com/">Weavesilk</a><br/>
+						<span>玩具</span><!--xxxx-->
+					</dd>
+					<dd >
+						<a target="_blank" href="https://thisissand.com/">Thisissand</a><br/>
+						<span>玩具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://paintschainer.preferred.tech/index_zh.html">Paintschainer</a><br/>
+						<span>玩具</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C09"><!--素材网站-->
+				<dl>
+					<dt>素材图片 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.hellorf.com/">站酷海洛</a><br/>
+						<span>国内 | 付费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.58pic.com/">千图网</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://ibaotu.com/">包图网</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.meigongyun.com/">美工云</a><br/>
+						<span>国内</span><!--QQ-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://lfx20.com/">乐享网</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://90sheji.com/">90后设计</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.yrucd.com/">云瑞</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.logohhh.com/">狼牙</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://dameigong.cn/">大美工</a><br/>
+						<span>国内</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.freepik.com/">freepik</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://pngimg.com/">Pngimg</a><br/>
+						<span>PNG图片下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.kisspng.com/">KissPng</a><br/>
+						<span>PNG图片下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.vecteezy.com/">Vecteezy</a><br/>
+						<span>Vecteezy</span><!--xxxx-->
+					</dd>
+
+					<dd>
+						<a target="_blank" href="https://www.textures.com/">Textures</a><br/>
+						<span>材料包</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pixeden.com/">Pixeden</a><br/>
+						<span>各种样机</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://2008php.com/">OUKAKA</a><br/>
+						<span>OUKAKA</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.humaaans.com/">Humaaans</a><br/>
+						<span>Humaaans</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.nicepsd.com/">Nicepsd</a><br/>
+						<span>Nicepsd</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.uibaba.com/">Uibaba</a><br/>
+						<span>Uibaba</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.nicepsd.com/">NicePsd</a><br/>
+						<span>NicePsd</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C10"><!--色彩网站-->
+				<dl>
+					<dt>色彩网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://nipponcolors.com/">Nippon Colors</a><br/>
+						<span>日本色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.webdesignrankings.com/resources/lolcolors/">Lolcolors</a><br/>
+						<span>配色网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://colorhunt.co/">Color Hunt</a><br/>
+						<span>配色网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.materialui.co/">Material Ui</a><br/>
+						<span>配色网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://colorleap.app/">Colorleap</a><br/>
+						<span>Colorleap</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.peise.net/">Peise</a><br/>
+						<span>配色学习</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://coolors.co/">Coolors</a><br/>
+						<span>配色学习</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://picular.co/">Picular</a><br/>
+						<span>色彩联想</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://uigradients.com/">Ui Gradients</a><br/>
+						<span>渐变色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://webgradients.com/">Web Gradients</a><br/>
+						<span>渐变色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.grabient.com/">Grabient</a><br/>
+						<span>Palettable</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.palettable.io/">Palettable</a><br/>
+						<span>Palettable</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://color.adobe.com/">Adobe Color</a><br/>
+						<span>色轮</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.peise.net/tools/web/">Peise Tools</a><br/>
+						<span>色轮</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.0to255.com/">0to255</a><br/>
+						<span>0to255</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://colorsupplyyy.com/app">Color Supply</a><br/>
+						<span>Color Supply</span><!--xxxx-->
+					</dd>
+					<dd >
+						<a target="_blank" href="http://kolor.moro.es/">Moro</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://colllor.com/">Colllor</a><br/>
+						<span>颜色查找</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.colorhexa.com/">Color hexa</a><br/>
+						<span>色彩对应MYKB/RGB</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.flatuicolorpicker.com/">Flatuicolor picker</a><br/>
+						<span>基础色彩</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://color.uisdc.com/">Color.uisdc</a><br/>
+						<span>中国传统色彩</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.webpagefx.com/web-design/random-color-picker/">Random.color</a><br/>
+						<span>随机颜色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://flatuicolors.com/">Flatuicolors</a><br/>
+						<span>UI配色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.58pic.com/peise/">58peise</a><br/>
+						<span>配色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.materialpalette.com/">Material Palette</a><br/>
+						<span>材料调色板</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.colourlovers.com/lover/COLOURlover">Colourlover</a><br/>
+						<span>颜色查找</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.colorcombos.com/">Colorcombos</a><br/>
+						<span>色彩组合</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pantone.com/">Pantone</a><br/>
+						<span>潘通</span><!--xxxx-->
+					</dd>	
+				</dl>
+			</div>
+			<div id="C11"><!--字体网站-->
+				<dl>
+					<dt>字体网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://fonts.safe.360.cn/">360查字体</a><br/>
+						<span>检测字体是否免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ziticq.com/">字体传奇</a><br/>
+						<span>字体品牌</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://izihun.com/">字魂</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.fontke.com/">字客网</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.hellofont.cn/index">字由</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.whatfontis.com/">Whatfontis</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.fonts.com/">Fonts</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.onlinewebfonts.com/top">OWF</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.myfonts.com/">Myfonts</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.dafont.com/">Dafont</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://fontstorage.com/">Fontstorage</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.typotheque.com/">Typotheque</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://fontsinuse.com/">FIU</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.fontsquirrel.com/">FQ</a><br/>
+						<span>下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zhaozi.cn/">找字网</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.qiuziti.com/">求字体</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.akuziti.com/">字体转换</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.shufazidian.com/">书法字典</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.foundertype.com/index.php/Index/index.html">方正字库</a><br/>
+						<span>字库</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://shouxieti.com">手写体</a><br/>
+						<span>手写字体交流</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://www.typeisbeautiful.com/">TIB</a><br/>
+						<span>Type is Beautiful</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://handmadefont.com/">HMF</a><br/>
+						<span>手写字</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C12"><!--图标网站-->
+				<dl>
+					<dt>图标网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.iconfinder.com/">Iconfinder</a><br/>
+						<span>很有设计感 | 付费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://icons8.com/">Icons8</a><br/>
+						<span>老牌分类专业</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.easyicon.net/">Easyicon</a><br/>
+						<span>很不错</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iconfont.cn/">Iconfont</a><br/>
+						<span>阿里巴巴矢量图库</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://thenounproject.com/">Thenounproject</a><br/>
+						<span>更为精致，可以作为小设计图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://roundicons.com/">Round Icons</a><br/>
+						<span>更为精致，可以作为小设计图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://pictogram2.com/">Pictogram2</a><br/>
+						<span>人物素材</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://iconmonstr.com/">Iconmonstr</a><br/>
+						<span>可查找企业LOGO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://instantlogosearch.com/">InstantLOGO</a><br/>
+						<span>各大公司标准LOGO</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="http://www.iconninja.com/">Iconninja</a><br/>
+						<span>PNG图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.flaticon.com/">Flaticon</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://cssauthor.com/free-icons/">Cssauthor</a><br/>
+						<span>图标</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pixeden.com/free-icons-set">Pixeden</a><br/>
+						<span>免费 | 一些还不错</span><!--xxxx-->
+					</dd>													
+				</dl>
+			</div>
+			<div id="C13"><!--图库网站-->
+				<dl>
+					<dt>图库网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.pexels.com/">Pexels</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://pixabay.com/">Pixabay</a><br/>
+						<span>免费 | 插画 | 矢量图 | 视频</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://unsplash.com/">Unsplash</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://stocksnap.io/">Stocksnap</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://foter.com">Foter</a><br/>
+						<span>免费 | 搜素</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.gratisography.com/">Gratisography</a><br/>
+						<span>免费 | 创意</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://freephoto.bizutart.com">Bizutart</a><br/>
+						<span>免费 | 日本</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.bucketlistly.blog/photos/">Bucketlistly</a><br/>
+						<span>Bucketlistly日志</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://cupcake.nilssonlee.se/">Cupcake</a><br/>
+						<span>免费 | 冷调 | 精致</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://food.foto.ne.jp">Food.Foto</a><br/>
+						<span>免费 | 食物</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.foodiesfeed.com">Foodiesfeed</a><br/>
+						<span>免费 | 食物</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://foodshot.co">Foodshot</a><br/>
+						<span>免费 | 食物</span><!--xxxx-->
+					</dd>
+						<dd>
+						<a target="_blank" href="https://www.veer.com/">Veer</a><br/>
+						<span>veer</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://colorhub.me/">Colorhub</a><br/>
+						<span>免费 | 冷调 | 精致</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.freeimages.com">Freeimages</a><br/>
+						<span>免费 | 花朵</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://photo-ac.com/">Photo-AC</a><br/>
+						<span>免费 | 人像</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://freerangestock.com">Freerangestock</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.eso.org/public/images/">ESO</a><br/>
+						<span>星空</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://rosetta-osiris.eu/">Rosetta Osiris</a><br/>
+						<span>星空</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.hippopx.com/">Hippopx</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ac-illust.com/">Ac-illust</a><br/>
+						<span>免费 | 矢量图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://kaboompics.com/">Kaboompics</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.lifeofpix.com/">Life Of Pix</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://morguefile.com/">Morguefile</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://littlevisuals.co/">Littlevisuals</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://images.nasa.gov/">NASA</a><br/>
+						<span>免费 | 星球</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://on.thisistap.com/stock-images/">ThisisTap</a><br/>
+						<span>免费 | BANNNER</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://openclipart.org/">Openclipart</a><br/>
+						<span>免费 | SVG</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://freenaturestock.com/">Naturestock</a><br/>
+						<span>分类免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.stockvault.net/">Stockvault</a><br/>
+						<span>分类免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://librestock.com/">Librestock</a><br/>
+						<span>分类索引</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://isorepublic.com/">ISOrepublic</a><br/>
+						<span>分类免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://visualhunt.com/">Visualhunt</a><br/>
+						<span>分类免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.splitshire.com/">Splitshire</a><br/>
+						<span>高清精致</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://publicdomainarchive.com/">Publicdomainarchive</a><br/>
+						<span>精致高清</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.polayoutu.com/collections">泼辣有图</a><br/>
+						<span>免费高清</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://cupcake.nilssonlee.se/">nilssonlee.</a><br/>
+						<span>高清</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.vcg.com/">Vcg</a><br/>
+						<span>创意付费</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://www.foodiesfeed.com/">Foodiesfeed</a><br/>
+						<span>食物图片</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://p.bigbigwork.com/">大狮搜索</a><br/>
+						<span>不用翻墙找图</span><!--xxxx-->
+					</dd>							
+					<dd>
+						<a target="_blank" href="http://www.sozai-page.com/">Sozai-Page</a><br/>
+						<span>料理食材</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://bizhi.4493.com/">4493</a><br/>
+						<span>壁纸</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.quanjing.com/">全景图库</a><br/>
+						<span>壁纸</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.tokydate.net/">东京街景</a><br/>
+						<span>东京街景</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.lifeofpix.com/">Life of pix</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://freelyphotos.com/">Freelyphotos</a><br/>
+						<span>竖版</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://tookapic.com/photos?sort=downloads&filter=free">Tokapic</a><br/>
+						<span>部分免费/质量很赞</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.freemagebank.com/">Freemagebank</a><br/>
+						<span>高清还有白底插画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://stokpic.com/">Stokpic</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://goodstock.photos/">Goodstock</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.designerspics.com/">Designerspics</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://fancycrave.com/">Fancycrave</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://picjumbo.com/">Picjumbo</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://barnimages.com/">Barnimages</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.photock.jp/category/">Category</a><br/>
+						<span>日本/素材图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pakutaso.com/">Pakutaso</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.designerspics.com/">Designerspics</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ssyer.com/">SSYER</a><br/>
+						<span>免费高清</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.coverr.co/">COVERR</a><br/>
+						<span>视频片段</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://thngs.co/">thngs</a><br/>
+						<span>老物件-重要</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://magdeleine.co/browse/">Magdeleine</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.soogif.com/">Soogif</a><br/>
+						<span>动图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://giphy.com/">Giphy</a><br/>
+						<span>动图</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C14"><!--影视资源-->
+				<dl>
+					<dt>电影视频 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.bd-film.cc/">BD影视</a><br/>
+						<span>电影下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://xiongmaopan.com/">熊猫纪录片</a><br/>
+						<span>电影下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="hhttps://mixkit.co/">MixKit</a><br/>
+						<span>视频下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.onehourlife.com/">ONEHOURLIFE</a><br/>
+						<span>视频下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.aigei.com/">Aigei</a><br/>
+						<span>各种素材</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.yinxiao.com/">Yinxiao</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://youtube.com/audiolibrary">Audiolib</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.bensound.com/">Bensound</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://soundscrate.com/">Soundscrate</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://sc.chinaz.com/yinxiao/">Chinaz.yinxiao</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://koukaongen.com/">Koukaongen</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.3dnew.com/Yinxiao/?jdfwkey=lsvnw3">3dnew.Yinxiao</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.aigei.com/">Aigei</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pond5.com/">Pond5</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.conversesamplelibrary.com/">CSL</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.freesoundeffects.com/">FSE</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="http://www.soundgator.com/">Soundgator</a><br/>
+						<span>音效下载</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="C15"><!--iH5网站-->
+				<dl>
+					<dt>iH5网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.iguoguo.net/html5">Iguoguo</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.h5anli.com/">H5案例</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.chuangyihui.net/">H5创意汇</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.h6app.com/">H5案例集</a><br/>
+						<span>参考</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="http://maka.im">MAKA</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ichuye.cn/">初页</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.rabbitpre.com/">兔展</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://s.wps.cn/">秀堂</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://h5.bce.baidu.com/">百度H5</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.epub360.com/">意派</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ih5.cn">iH5</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+
+				</dl>
+			</div>
+			<div id="C16"><!--PPT网站-->
+				<dl>
+					<dt>PPT网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://graphicriver.net/category/presentation-templates">Presentation</a><br/>
+						<span>全球最高设计水平的PPT网站</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://www.presentationload.com/">Presentationload</a><br/>
+						<span>国外的PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pptstore.net/">PPTstore</a><br/>
+						<span>国内PPT网站/大牛很多</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://office.mmais.com.cn/Template/Home.shtml">OfficePlus</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.yanj.cn/">演界网</a><br/>
+						<span>国内PPT网站/大牛很多</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.docer.com/">稻壳儿</a><br/>
+						<span>国内PPT网站/大牛很多</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.tretars.com/">B格PPT</a><br/>
+						<span>PPT个人网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ypppt.com/">优品PPT</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zhaogeppt.com/">找个PPT</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pptfans.cn/">PPTfans</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ppt20.com/">变色龙</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pptmind.com/">PPTmind</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://nlat.xyz/">NLAT</a><br/>
+						<span>PPT网站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://oktools.xyz/">OK</a><br/>
+						<span>PPT插件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.islide.cc/">Islide</a><br/>
+						<span>PPT插件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.papocket.com/">口袋动画</a><br/>
+						<span>PPT插件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://meihua.docer.com/">美化大师</a><br/>
+						<span>PPT插件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.koppt.cn/">KOPPT</a><br/>
+						<span>PPT插件</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://daishu.baidu.com/?from=pptweb">袋鼠输入</a><br/>
+						<span>PPT工具</span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://ppj.io/">PPT匠</a><br/>
+						<span>上传PPT一键生成H5</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.axeslide.com/">斧子演示</a><br/>
+						<span>演示工具</span><!--xxxx-->
+					</dd>							
+					<dd>
+						<a target="_blank" href="https://slidedog.com/">Slidedog</a><br/>
+						<span>演示工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.hippter.com/">汇集PPTL利器</a><br/>
+						<span>汇集PPTL利器</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://glide.slidor.fr/">Glide</a><br/>
+						<span>免费</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+
+			<!--Workplace Guide-->
+
+			<div id="D01"><!--工作网站-->
+				<dl>
+					<dt>工作网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.growthhk.cn/">增长黑客</a><br/>
+						<span>课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.woshipm.com/">人人都是产品经理</a><br/>
+						<span>设计</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.digitaling.com/">数英</a><br/>
+						<span>营销</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hd.weibo.com/case/">社会化营销案例库</a><br/>
+						<span>营销</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.iyiou.com/">亿欧</a><br/>
+						<span>科技</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ebrun.com/">亿邦动力</a><br/>
+						<span>科技</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://36kr.com/">36氪</a><br/>
+						<span>科技</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ceconline.com/">世界经理人</a><br/>
+						<span>机构</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.huodongjia.com/">活动家</a><br/>
+						<span>会议</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iceo.com.cn/">中国企业家</a><br/>
+						<span>机构</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://wiki.mbalib.com/">Mbalib</a><br/>
+						<span>机构</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="D02"><!--行业咨询-->
+				<dl>
+					<dt>行业咨询 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://re.qq.com/">企鹅智酷</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://cn.data.cmcm.com/">猎豹洞察</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.199it.com/">199IT</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.questmobile.com.cn/">QUESTMOBILE</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.useit.com.cn/">USEIT知识库</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www2.deloitte.com/">Deloitte</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.mckinsey.com/">Mckinsey</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.rolandberger.com/">RolandBerger</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ibm.com/">IBM</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="D03"><!--职场工具-->
+				<dl>
+					<dt>职场工具 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.lagou.com/">拉勾网</a><br/>
+						<span>发现新的职业机会 </span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.paidai.com/">派代</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.taokeshow.com/">淘客</a><br/>
+						<span>工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.adinsights.cn">热云数据</a><br/>
+						<span>广告数据</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://feathub.com/LinXueyuanStdio/996.ICU">996.ICU</a><br/>
+						<span>广告数据</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="D04"><!--学习课程-->
+				<dl>
+					<dt>学习课程 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.growthhk.cn/">增长黑客</a><br/>
+						<span>课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://huke88.com/album/detail/1062130.html?sem=baidu&kw=105962&page=1">新媒体运营</a><br/>
+						<span>课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://study.163.com/course/introduction.htm?courseId=1003944050#/courseDetail?tab=1">从零开始学运营</a><br/>
+						<span>从课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.sanjieke.cn/">三节课</a><br/>
+						<span>机构</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+
+			<!--Reading Guide-->
+
+			<div id="E01"><!--流行媒体-->
+				<dl>
+					<dt>流行媒体 ◤</dt>
+					
+					<dd>
+						<a target="_blank" href="https://www.huxiu.com/">虎嗅网</a><br/>
+						<span>科技/创业</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.tmtpost.com/">钛媒体</a><br/>
+						<span>引领商业未来和生活新知</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iheima.com/">黑马网</a><br/>
+						<span>让创业者不再孤独</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pingwest.com/">品玩网</a><br/>
+						<span>有品好玩的科技一切与你有关</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://sspai.com/">少数派</a><br/>
+						<span>数字消费指南平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.digitaling.com//">数英网</a><br/>
+						<span>关于分享和探索的地方</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ifanr.com/">爱范儿</a><br/>
+						<span>关于分享和探索的地方</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.leiphone.com/">雷锋网</a><br/>
+						<span>读懂智能和未来</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.jiemian.com/">界面网</a><br/>
+						<span>界面网</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.v2ex.com/">V2EX</a><br/>
+						<span>关于分享和探索的地方</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.jobplus.com.cn/knowledgeBaseIndex">JOBPLUS</a><br/>
+						<span>JobPlus</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.guokr.com/">果壳</a><br/>
+						<span>科学有意思</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="E02"><!--科技阅读-->
+				<dl>
+					<dt>科技阅读 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.citnews.com.cn/">科技资讯</a><br/>
+						<span>Citnews</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.geekpark.net/">极客公园</a><br/>
+						<span>只为商业新变量</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.ithome.com/">IT之家</a><br/>
+						<span>数码、科技、生活</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cnbeta.com/">CNBeta</a><br/>
+						<span>中文业界资讯站</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.bioon.com/">生物谷</a><br/>
+						<span>新发现新技术新产业</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="E03"><!--新闻阅读-->
+				<dl>
+					<dt>新闻阅读 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.guancha.cn/">观察者</a><br/>
+						<span>中文</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.thepaper.cn/">澎湃</a><br/>
+						<span>中文</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.bbc.com/">BBC</a><br/>
+						<span>英文</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://edition.cnn.com/">CNN</a><br/>
+						<span>英文</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.voanews.com/">VOA</a><br/>
+						<span>英文</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.chinadaily.com.cn/">CDY</a><br/>
+						<span>英文</span><!--xxxx-->
+					</dd>
+
+				</dl>
+			</div>
+			<div id="E03"><!--小说阅读-->
+				<dl>
+					<dt>小说阅读 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.qidian.com/">起点中文</a><br/>
+						<span>国内最大的原创文学网站</span><!--阿里云邮箱登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://yuedu.163.com/">网易云阅读</a><br/>
+						<span>成为作家</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+				
+			<!--Study Guide-->
+
+			<div id="F01"><!--个人管理-->
+				<dl>
+					<dt>个人管理 ◤</dt>	
+					<dd>
+						<a target="_blank" href="http://www.mifengtd.cn/">褪墨</a><br/>
+						<span>时间管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.worklifebalance.com/">Work Life Balance</a><br/>
+						<span>管理</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://lifehacker.com/">Life Hacker</a><br/>
+						<span>Life Hacker</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://jiyigd.com/">记忆宫殿</a><br/>
+						<span>记忆训练</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://99u.adobe.com/">99U</a><br/>
+						<span>管理</span><!--###-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://zh.wikihow.com/">Wikihow</a><br/>
+						<span>管理</span><!--###-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F02"><!--个人网站-->
+				<dl>
+					<dt>个人网站-暂不整理 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.aakashnihalani.com">Aakash Nihalani</a><br/>
+						<span>Aakash Nihalani设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dailyoverview.com/">Daily Overview</a><br/>
+						<span>每日概览</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://gebhart.dk/">Daniel Gebhart</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://minjimoon.com/">MinjiMoon</a><br/>
+						<span>MinjiMoon设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://giuliabersani.com/">Giulia Bersani</a><br/>
+						<span>Giuliabersani摄影作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.limkina.com/">Elena Limkina</a><br/>
+						<span>Elena Limkina艺术作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://giuliabersani.com/">Giulia Bersani</a><br/>
+						<span>Giuliabersani摄影作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.mel-odom.com/">Mel Odom</a><br/>
+						<span>Mel Odom设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://ariversluis.com/">Ari Versluis</a><br/>
+						<span>人像拍摄</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://rgznsk.ovh/">Lucas Rgnsk</a><br/>
+						<span>Lucas Rgnsk设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.michaelwhelan.com/">Michaelwhelan</a><br/>
+						<span>Michaelwhelan设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://evgenikoroliov.com/">Evgeni Koroliov</a><br/>
+						<span>Evgeni Koroliov人像作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mrcggn.com/">Marco Oggian</a><br/>
+						<span>Marco Oggian作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://sawakokabuki.wixsite.com/xxxx">冠木佐和子</a><br/>
+						<span>冠木佐和子设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://loganhagege.com/">Logan Hagege</a><br/>
+						<span>Logan Hagege设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.thejealouscurator.com/">The Jealous Curator</a><br/>
+						<span>The Jealous Curator艺术作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.magdiellopez.com/">Magdiel Lopez</a><br/>
+						<span>Magdiel Lopez海报作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.artmaestro.com/">Tigran Ghulyan</a><br/>
+						<span>Tigran Ghulyan</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://markomanev.com/">Marko Manev</a><br/>
+						<span>Marko Manev设计作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.aaronnagel.com/">Nagel</a><br/>
+						<span>Nagel摄影作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.timwalkerphotography.com/">TimWalker</a><br/>
+						<span>TimWalker摄影作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.nathanreidt.com/">Nathan Reidt</a><br/>
+						<span>Nathan Reidt绘画作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.noahdeledda.com/">Noah Deledda</a><br/>
+						<span>Noah Deledda艺术作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://onevcat.com/">OneV's Den</a><br/>
+						<span>OneV's Den编程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.owendavey.com/">Owen Davey</a><br/>
+						<span>Owen Davey插画作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.caseycripe.com/">Casey Cripe</a><br/>
+						<span>Casey Cripe</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.caseycripe.com/">Casey Cripe</a><br/>
+						<span>Casey Cripe</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://artur-birkle.de/">artur birkle</a><br/>
+						<span>摄影</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.stickymonsterlab.com/?ckattempt=2">StickymonsterLab</a><br/>
+						<span>3D图</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://afuchan.com/">afuchan</a><br/>
+						<span>插画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dogma.name/">Dogma</a><br/>
+						<span>Dogma</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.playinchoc.com/">playinchoc</a><br/>
+						<span>Dogma</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.cruschiform.com/">Cruschiform</a><br/>
+						<span>Cruschiform</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://strautniekas.com/">Strautniekas</a><br/>
+						<span>Strautniekas</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.rebeccadautremer.com/">Rebecca Dautremer</a><br/>
+						<span>Rebecca Dautremer插画作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ronarad.co.uk/">Ron Arad Associates</a><br/>
+						<span>Ron Arad Associates作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.lethbridgegallery.com/artist/john-morris/primary">john morris</a><br/>
+						<span>Ron Arad Associates作品</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://studygroupcomics.com/">Study Group</a><br/>
+						<span>Study Group</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.vivianmaier.com/">Vivian Maier</a><br/>
+						<span>Vivian Maier</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.limkina.com/">Limkina</a><br/>
+						<span>Limkina</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://beeple-crap.com/">Beeple</a><br/>
+						<span>C4D</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://hello.eboy.com/eboy/">eBoy</a><br/>
+						<span>插画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://alteredqualia.com/">AlteredQualia</a><br/>
+						<span>WebGL大神AlteredQualia</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://theartissue.com/">Artissue</a><br/>
+						<span>个人</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://noritake.org/">Noritake</a><br/>
+						<span>个人</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://laod.cn/">LaoD</a><br/>
+						<span>个人博客</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://saier.me/">夜月七境</a><br/>
+						<span>手绘软件</span><!--QQ已添加-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cnblogs.com/doit8791/">三年后</a><br/>
+						<span>个人博客</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://iconmoon.com/blog2/">图月志</a><br/>
+						<span>个人博客</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://blog.codingnow.com/">云风</a><br/>
+						<span>个人博客</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.scotthyoung.com/">Scotth Young</a><br/>
+						<span>Scotth Young</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://diygod.me/">DiyGod</a><br/>
+						<span>个人博客</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://jamescarse.com/">James.P.Carse</a><br/>
+						<span>James.P.Carse</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.zreading.cn/">左岸读书</a><br/>
+						<span></span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F03"><!--公号研究-->
+				<dl>
+					<dt>公号研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://mp.weixin.qq.com/">微信公号</a><br/>
+						<span>公号平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://weixin.sogou.com/">搜狗·微信</a><br/>
+						<span>文章搜索平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.xiguaji.com/">西瓜集</a><br/>
+						<span>提供公号排名</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.newrank.cn/">新榜</a><br/>
+						<span>内容产业服务平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://yiban.io/">壹伴</a><br/>
+						<span>微信文章排版工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://xiumi.us/#/">秀米</a><br/>
+						<span>微信文章排版工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.135editor.com/">135</a><br/>
+						<span>微信文章排版工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://lab.lyric.im/wxformat/">Format</a><br/>
+						<span>微信文章排版工具</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.vreadtech.com/">Vreadtech</a><br/>
+						<span>微信公号阅读</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://qnmlgb.tech/">瓦斯阅读</a><br/>
+						<span>微信公号阅读</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>	
+			<div id="F04"><!--活动网站--->
+				<dl>
+					<dt>活动网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.huodongxing.com/">活动行</a><br/>
+						<span>精彩城市生活 尽在活动行 </span><!--微信登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.mad.asia/">创不同</a><br/>
+						<span>Make a Difference</span><!--阿里云邮箱登陆-->
+					</dd>
+				</dl>
+			</div>	
+			<div id="F05"><!--创意研究-->
+				<dl>
+					<dt>创意研究-暂时没有确定 ◤</dt> 
+					<dd>
+						<a target="_blank" href="http://www.topys.cn/">TOPYS</a><br/>
+						<span>Open Your Mind</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.demilked.com/">Demilked</a><br/>
+						<span>致力于新兴创意设计作品报道和评论</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://neocha.com/">NeoCha</a><br/>
+						<span>致力于新兴创意设计作品报道和评论</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://thecreatorsproject.vice.cn/">创想计划</a><br/>
+						<span>异视异色</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.qdaily.com/">好奇心日报</a><br/>
+						<span>好奇心日报</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://ycg.qq.com/">原创馆</a><br/>
+						<span>腾讯</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://dig.chouti.com/">抽屉网</a><br/>
+						<span>抽屉网</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://sidlee.com/en">Sidlee</a><br/>
+						<span>Sidlee</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://bldgwlf.com/">Bldgwlf</a><br/>
+						<span>Bldgwlf</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://muuuuu.org/">Muuuuu</a><br/>
+						<span>Muuuuu-翻墙</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pitchina.com.cn/">Pitchina</a><br/>
+						<span>Pitchina</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F06"><!--语言研究-->
+				<dl>
+					<dt>语言研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.bbc.co.uk/learningenglish/">LE</a><br/>
+						<span>learning English</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.britishcouncil.hk/en">British Council</a><br/>
+						<span>britishcouncil</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://visuwords.com/">Visuwords</a><br/>
+						<span>联想词</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.dictall.com/">词都</a><br/>
+						<span>词典</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.usatoday.com/">USA Today</a><br/>
+						<span>新闻</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.engvid.com/">Engvid</a><br/>
+						<span>视频</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.hlyy.in/">哈喽英语</a><br/>
+						<span>基础学习</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>									
+			<div id="F07"><!--音乐研究-->
+				<dl>
+					<dt>音乐研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://music.163.com/">网易云音乐</a><br/>
+						<span>APP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://music.douban.com/">豆瓣音乐</a><br/>
+						<span>APP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.xiami.com/">虾米音乐</a><br/>
+						<span>APP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://y.qq.com/">QQ音乐</a><br/>
+						<span>APP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.app-echo.com/">Echo回声</a><br/>
+						<span>APP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://5sing.kugou.com/index.html">51SING</a><br/>
+						<span>原创</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ncpa-classic.com/">NCPA</a><br/>
+						<span>古典</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://musicianguide.cn/">音乐人攻略</a><br/>
+						<span>思考</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.jzclub.cn/">JZClub</a><br/>
+						<span>爵士乐</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.170mv.com/">170MV</a><br/>
+						<span>MV</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.freeplaymusic.com/index.aspx">FPM</a><br/>
+						<span>FREE</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.looperman.com/">Looperman</a><br/>
+						<span>Looperman</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.yinyuetai.com/">音悦台</a><br/>
+						<span>MV</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://alteredqualia.com">音乐猫</a><br/>
+						<span>音乐猫</span><!--xxxx-->
+					</dd>
+					
+				</dl>
+			</div>
+			<div id="F08"><!--艺术研究-->
+				<dl>
+					<dt>艺术研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.mei-shu.com/">MEISU</a><br/>
+						<span>MEISHU</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.airitiart.cn/">Airiti</a><br/>
+						<span>MEISHU</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.kreavi.com/">kreavi</a><br/>
+						<span>kreavi</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://en.m.wikipedia.org/wiki/Surrealist_techniques#%C3%89tr%C3%A9cissements">Surrealist Techniques</a><br/>
+						<span>Groundoohart</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.artlinkart.com/">ALA</a><br/>
+						<span>ArtLinkArt</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://trendland.com/">trendland</a><br/>
+						<span>trendland</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pocko.com/">Pocko</a><br/>
+						<span>Pocko</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.thisiscolossal.com/">Colossal</a><br/>
+						<span>Colossal</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.lethbridgegallery.com/">lethbridge</a><br/>
+						<span>gallery</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>	
+			<div id="F09"><!--插画网站-->
+				<dl>
+					<dt>插画网站 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.poocg.com/">涂鸦王国</a><br/>
+						<span>原创绘画社区</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://bbs.cciup.com/portal.php">CCIUP</a><br/>
+						<span>CCIUP</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.pixiv.net/">Pixiv</a><br/>
+						<span>Pixiv</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://illustrationage.com/">Illustrationage</a><br/>
+						<span>Illustrationage</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.itsnicethat.com/">itsnicethat</a><br/>
+						<span>itsnicethat</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.booooooom.com/">Booooooom</a><br/>
+						<span>Booooooom</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://deviantart.com/">Deviantart</a><br/>
+						<span>Deviantart</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.pseweb.com/">pseweb</a><br/>
+						<span>插画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://bldgwlf.com/">Bldgwlf</a><br/>
+						<span>Bldgwlf</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.lofter.com/">乐乎</a><br/>
+						<span>乐乎</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cwctokyo.com/">CWC</a><br/>
+						<span>日本插画机构</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.13cg.com/">插画家园</a><br/>
+						<span>爱插画爱生活</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://13cg.com/group/3">全球插画精选</a><br/>
+						<span>全球插画精选</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.moe-club.com/">爬藤</a><br/>
+						<span>爬藤</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F10"><!--建筑研究-->
+				<dl>
+					<dt>建筑研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.archdaily.com/">Archdaily</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.dezeen.com/">Dezeen</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.designboom.com/">Designboom</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://big.dk/">BIG</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://oma.eu/">OMA</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.gooood.cn/">Gooood</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.archcollege.com/">Archcollege</a><br/>
+						<span>建筑</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F11"><!--摄影研究-->
+				<dl>
+					<dt>摄影研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.fengniao.com/">蜂鸟</a><br/>
+						<span>中国领先的影像生活服务平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://tuchong.com/">图虫</a><br/>
+						<span>摄影师交流平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://500px.com">500PX</a><br/>
+						<span>摄影师交流平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cnu.cc/">CNU</a><br/>
+						<span>摄影师交流平台</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://seimeffects.com/category/free-lightroom-presets/">SEIM</a><br/>
+						<span>Master Photographer</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://1x.com/">1X</a><br/>
+						<span>摄影师交流平台</span><!--xxxx-->
+					</dd>
+					
+				</dl>
+			</div>
+			<div id="F12"><!--动漫研究-->
+				<dl>
+					<dt>动漫研究 ◤</dt>
+					<dd> 
+						<a target="_blank" href="http://animetaste.net/">AnimeTaste</a><br/>
+						<span>动画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://aimozhen.com/">艾墨镇</a><br/>
+						<span>动画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://animatedshortfilms.net/">ADS</a><br/>
+						<span>动画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cartoonbrew.com/">Cartoonbrew</a><br/>
+						<span>新闻</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://polycount.com/">Polycount</a><br/>
+						<span>社区</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.u17.com/">有妖气</a><br/>
+						<span>漫画</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.manhuadao.cn/">漫画岛</a><br/>
+						<span>漫画</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F13"><!--后期研究-->
+				<dl>
+					<dt>后期研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://c4dsky.com/">书生影视</a><br/>
+						<span>素材资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://vfxreel.net/">逍遥影视</a><br/>
+						<span>素材资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.lookae.com/">大众影视</a><br/>
+						<span>素材资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.cgown.com/">CG资源</a><br/>
+						<span>素材资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.cgmodel.com/">CG模型</a><br/>
+						<span>素材资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.52vfx.com/">52VFX</a><br/>
+						<span>特效制作</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.highend3d.com/">H3D</a><br/>
+						<span>Highend3D</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.newcger.com/">NewCGer</a><br/>
+						<span>数字视觉</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F14"><!--数据可视-->
+				<dl>
+					<dt>数据可视 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.tableau.com/">Tableau</a><br/>
+						<span>数据可视化软件</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://powerbi.microsoft.com/">Power BI</a><br/>
+						<span>数据可视化软件</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="/">Python</a><br/>
+						<span>数据编程</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="/">PHP</a><br/>
+						<span>数据编程</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="/">HTML、JavaScript&CSS</a><br/>
+						<span>数据编程</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://powerbi.microsoft.com/">R</a><br/>
+						<span>数据编程</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://d3js.org/">D3JS</a><br/>
+						<span>数据可视化</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://alteredqualia.com/">Altered Qualia</a><br/>
+						<span>wait</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://gallery.echartsjs.com/">Echarts</a><br/>
+						<span>数据可视化</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.jiandaoyun.com/f/5bf50032298043148fcb8340">数据可视化导航</a><br/>
+						<span>数据可视化</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.afenxi.com/hao">数据分析网</a><br/>
+						<span>数据可视化</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://naotu.baidu.com/file/8ae8dcdf0b8e9b0a4b855875b6fb1d3d?token=52980f1ae33bde5a">数据可视化资源</a><br/>
+						<span>数据可视化资源</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.jiandaoyun.com/f/5b35d05ff7f6ef2604d39a93">数据来源</a><br/>
+						<span>数据可视化资源</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F15"><!--编程研究-->
+				<dl>
+					<dt>编程研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.oschina.net/">开源中国</a><br/>
+						<span>开源技术社区</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://github.com/">GitHub</a><br/>
+						<span>Built for developers</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.csdn.net/">CSDN</a><br/>
+						<span>论坛</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://stackoverflow.com/">SO</a><br/>
+						<span>解决方案</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.cnblogs.com/">博客园</a><br/>
+						<span>创作你的创作</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://segmentfault.com/">思否</a><br/>
+						<span>代码学习</span><!--GitHub-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.codecademy.com/learn">Codecademy</a><br/>
+						<span>学习</span><!--GitHub-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.51cto.com/">51CTO</a><br/>
+						<span>51CTO</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.jq22.com/">JQURY</a><br/>
+						<span>插件库</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.w3school.com.cn/">W3School</a><br/>
+						<span>学习</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.jikexueyuan.com/">极客学院</a><br/>
+						<span>课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.jb51.net/">脚本之家</a><br/>
+						<span>脚本之家</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://mart.coding.net/projects">码市项目</a><br/>
+						<span>码市项目</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.imooc.com/">慕课网</a><br/>
+						<span>课程</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://juejin.im/">掘金</a><br/>
+						<span>一个帮助开发者成长的社区</span><!--微信登陆-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://web.jobbole.com/">伯乐在线</a><br/>
+						<span>一个帮助开发者成长的社区</span><!--微信登陆-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F16"><!--数学研究-->
+				<dl>
+					<dt>数学研究 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://mathworld.wolfram.com/">Math World</a><br/>
+						<span>Wolfram</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.mathchina.com/">Math China</a><br/>
+						<span>Math China</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://webdemo.myscript.com/#/home">My Script</a><br/>
+						<span>My Script</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.desmos.com/">Desmos</a><br/>
+						<span>Desmos</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://terrytao.wordpress.com/">Terrytao</a><br/>
+						<span>Terrytao</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://brilliant.org/">Brilliant</a><br/>
+						<span>Brilliant</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://math.stackexchange.com/">Math Stackexchange</a><br/>
+						<span>Stackexchange</span><!--xxxx-->
+					</dd>
+			</div>	
+			<div id="F17"><!--游戏理论-->
+				<dl>
+					<dt>游戏理论 ◤</dt>
+					<dd>
+						<a target="_blank" href="http://www.digra.org/">DIGRA</a><br/>
+						<span>游戏理论研究</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.chinesedigra.org/">ChineseDIGRA</a><br/>
+						<span>DIGRA中华地区分部</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://gamestudies.org/">Gamestudies</a><br/>
+						<span>Gamestudies</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.gamesforchange.org/">Games for change</a><br/>
+						<span>Gamesforchange</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>
+			<div id="F18"><!--等待分类-->
+				<dl>
+					<dt>等待分类 ◤</dt>
+					<dd>
+						<a target="_blank" href="https://www.chiphell.com/">Chiphell</a><br/>
+						<span>Chiphell</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.douban.com/location/shenzhen/">豆瓣同城</a><br/>
+						<span>深圳旅行</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.socibar.com/">社会学吧</a><br/>
+						<span>wait</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.ikuku.cn/">在库言库</a>><br/>
+						<span>在库言库</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.wgsn.com/en/">WGSN</a><br/>
+						<span>服装设计</span><!--查看在作品集必备-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://issuu.com/">Issuu</a><br/>
+						<span>作品集-翻墙</span><!--查看在作品集必备-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://models.com/">MODELS</a><br/>
+						<span>模特网站</span><!---->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.iresearch.com.cn/">艾瑞咨询</a><br/>
+						<span>行业咨询</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.eeff.net/portal.php">EEFF</a><br/>
+						<span>穿针引线</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://cgpersia.com/tag/gumroad">CGPersia</a><br/>
+						<span>CGPersia</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="http://www.thegsummit.org/">Gsummit</a><br/>
+						<span></span><!--xxxx-->
+					</dd>	
+					<dd>
+						<a target="_blank" href="https://element.eleme.cn/#/zh-CN">Element</a><br/>
+						<span>CGPersia</span><!--xxxx-->
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.marxists.org/reference/subject/philosophy/index.htm">Marxists</a><br/>
+						<span>微型哲学博物馆</span><!--xxxx-->
+					</dd>
+				</dl>
+			</div>	
+		</div>			
+	</div>
+</body>
+</html>
